@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impress My Wife</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>For My Beloved Wife</h1>
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="photo1.jpg" alt="Photo 1">
+                <div class="caption">Our first vacation together</div>
+            </div>
+            <div class="slide fade">
+                <img src="photo2.jpg" alt="Photo 2">
+                <div class="caption">Remember this beautiful day?</div>
+            </div>
+            <div class="slide fade">
+                <img src="photo3.jpg" alt="Photo 3">
+                <div class="caption">Forever in love</div>
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+        <div class="note-container">
+            <textarea id="noteInput" placeholder="Write a love note..."></textarea>
+            <button onclick="generateLoveNote()">Generate Love Note</button>
+            <div id="loveNote"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
